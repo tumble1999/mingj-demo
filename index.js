@@ -10,4 +10,5 @@ stdin(GDgetPrompt()).then(input=>{
 })
 }
 
+console.log("Type 'help' for a list of commands.")
 startDemo();
