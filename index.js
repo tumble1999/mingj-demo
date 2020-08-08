@@ -4,7 +4,7 @@ console.warn = (...args) => stdout(args.join(" "), 2)
 console.error = (...args) => stdout(args.join(" "), 3)
 
 function startDemo() {
-	stdin(GDgetPrompt()).then(input => {
+	stdin(MGJgetPrompt()).then(input => {
 		Bash(input);
 		setTimeout(startDemo, 0);
 	})
