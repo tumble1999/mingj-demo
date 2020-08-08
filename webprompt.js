@@ -5,7 +5,7 @@
 
 function stdout(text,level=0) {
 	var p = document.createElement("p");
-	p.textContent = text;
+	p.innerText = text;
 	switch (level) {
 		case 1:
 			p.className = "info";
