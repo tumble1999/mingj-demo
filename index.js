@@ -1,7 +1,5 @@
-console.log = (...args) => stdout(args.join(" "))
-console.info = (...args) => stdout(args.join(" "), 1)
-console.warn = (...args) => stdout(args.join(" "), 2)
-console.error = (...args) => stdout(args.join(" "), 3)
+fs.dev.stdout.write = (...args) => stdout(args.join(" "))
+fs.dev.stderr.write = (...args) => stdout(args.join(" "), 3)
 
 function startDemo() {
 	stdin(MGJgetPrompt()).then(input => {
